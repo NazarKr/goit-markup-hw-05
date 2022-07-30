@@ -50,7 +50,7 @@
     <section class="baner">
       <div class="conteiner">
         <h1 class="baner-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="btn baner-btn" type="button">Заказать услугу</button>
+        <button class="btn baner-btn" type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
     <!--content-->
@@ -112,20 +112,20 @@
         <ul class="work-list list">
           <li class="work-item">
             <div class="work-wraper">
-            <img src="./img/box1.jpg" alt="developer typing on keyboard" width="370" />
-            <p class="work-text-overlay">Десктопные приложения</p>
+              <img src="./img/box1.jpg" alt="developer typing on keyboard" width="370" />
+              <p class="work-text-overlay">Десктопные приложения</p>
             </div>
           </li>
           <li class="work-item">
             <div class="work-wraper">
-            <img src="./img/box2.jpg" alt="mobile developer watching at phone" width="370" />
-            <p class="work-text-overlay">Мобильные приложения</p>
+              <img src="./img/box2.jpg" alt="mobile developer watching at phone" width="370" />
+              <p class="work-text-overlay">Мобильные приложения</p>
             </div>
           </li>
           <li class="work-item">
             <div class="work-wraper">
-            <img src="./img/box3.jpg" alt="developer watching at tablet" width="370" />
-            <p class="work-text-overlay">Дизайнерские решения</p>
+              <img src="./img/box3.jpg" alt="developer watching at tablet" width="370" />
+              <p class="work-text-overlay">Дизайнерские решения</p>
             </div>
           </li>
         </ul>
@@ -396,15 +396,17 @@
     </div>
   </footer>
   <!--backdrop-->
-  <div class="backdrop">
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <batton type="button " class="modal-close-btn">
+      <batton type="button " class="modal-close-btn" data-modal-close>
         <svg class="modal-close-icon" width="18" height="18">
           <use href="./img/symbol-defs.svg#icon-close-modal-black"></use>
         </svg>
       </batton>
     </div>
   </div>
-</body> 
+  <!-- js script -->
+  <script src="./js/modal.js"></script>
+</body>
 
 </html>
